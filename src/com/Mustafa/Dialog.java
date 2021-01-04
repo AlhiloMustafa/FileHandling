@@ -3,16 +3,16 @@ package com.Mustafa;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public  class Dialog {
+public class Dialog {
     public static Scanner scanner = new Scanner(System.in);
 
-    public static void startDialog(){
+    public static void startDialog() {
 
-        System.out.println("What do you want to do?"+"\n"+
-                "1-Create new .txt file and write in it."+"\n"+
-                "2-Read the contents of a file."+"\n"+
-                "3-Copy the contents of one file to another."+"\n"+
-                "4-Copy the contents of two files to One file"+"\n"+
+        System.out.println("What do you want to do?" + "\n" +
+                "1-Create new .txt file and write in it." + "\n" +
+                "2-Read the contents of a file." + "\n" +
+                "3-Copy the contents of one file to another." + "\n" +
+                "4-Copy the contents of two files to One file" + "\n" +
                 "your choice:");
 
         try {
@@ -48,12 +48,12 @@ public  class Dialog {
 
                     System.out.println(from1 + from2 + DestinationFile);
 
-                    TwoToOne TTO=new TwoToOne();
+                    TwoToOne TTO = new TwoToOne();
                     TTO.copyTwoToOne(from1, from2, DestinationFile);
 
             }
-        }catch (InputMismatchException e){
-            System.out.println("Please try again. Your choices must be only (1,2,3,or 4) "+e);
+        } catch (InputMismatchException e) {
+            System.out.println("Please try again. Your choices must be only (1,2,3,or 4) " + e);
         }
 
 
